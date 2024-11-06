@@ -105,48 +105,18 @@
             <div class="portfolio-description">
               <h2>Project Overview: Developing an Object-Recognizing Bionic Hand</h2>
               <p>
-                For my dissertation, I embarked on an exciting project that brought together machine learning, computer vision, and robotics. 
-                Driven by my growing passion for bionics, I wanted to explore how artificial intelligence could enhance the functionality of a robotic hand. 
-                The primary aim was to connect a visual sensor, such as a camera, to the bionic hand, allowing it to detect everyday objects and predict the most suitable grasp for each one.
+                For my dissertation, I developed an object detection application to integrate with the OYMotion bionic hand. Using an Arduino-based controller, 
+                I programmed the hand to perform various grasps and gestures by individually controlling each finger. The aim was to enable the hand to recognize everyday objects and suggest the most suitable grasp for each one,
+                 utilizing machine learning models trained on custom datasets. Due to time constraints, I couldn't fully integrate the bionic hand's movements with the model's outputs, but I programmed the hand to perform individual grasps as a proof of concept.
               </p>
-              <p2>
-                To bring this vision to life, I worked with the OYMotion bionic hand, a sophisticated robotic prosthesis capable of performing a range of grasps and gestures. 
-                I integrated my own Arduino-based controller to program the hand, writing code to control each finger independently. 
-                This allowed me to experiment with various grasping techniques and explore the hand’s potential for object manipulation.
-              </p2>
+            
               <h3>Technical Challenges and Solutions</h3>
               <p>
-                One of the major challenges I encountered was sourcing an appropriate dataset.
-                For the hand to recognize everyday objects, I needed images of common items against clear backgrounds. 
-                Unfortunately, finding a pre-existing dataset that met these criteria was difficult. 
-                Creating my own dataset was an option, but time constraints meant that I had to work with what was available. 
-                My solution was to combine images from different datasets, choosing ones that best represented the objects the bionic hand would interact with.
+                Selecting the right machine learning models posed unique challenges, as I needed ones that balanced accuracy and real-time performance. 
+                After a literature review, I chose VGG-19, MobileNet, and ResNet50—each offering strengths in object recognition and processing speed. However, 
+                the large dataset required extensive computational power and time to train, limiting my ability to experiment with model parameters. Despite these limitations, the project reinforced my passion for AI bionics and humanoid robotics. 
+                I hope to explore this area further in future projects, working towards faster, more robust robotic applications.
               </p>
-              <p2>
-                Training the model presented its own set of hurdles. Large datasets require substantial computational power and time to process, which limited my ability to experiment with different model parameters. 
-                Adjusting the parameters to improve the model’s accuracy was a time-intensive process. Ideally, more resources would have enabled a deeper optimization, but I managed to balance the model's accuracy and processing time to make it functional within the constraints of this project.
-              </p2>
-              <h4>Model Selection and Performance</h4>
-              <p>
-                To achieve real-time object detection and grasp prediction, I needed models known for both accuracy and speed. 
-                After conducting a literature review, I chose VGG-19, MobileNet, and ResNet50 — each a popular choice in computer vision research. 
-                VGG-19 is known for its depth and feature extraction capabilities, while MobileNet and ResNet50 are optimized for speed and efficiency.
-              </p>
-              <p2>
-                Each model provided a different trade-off in terms of performance. VGG-19 was more accurate in object recognition but computationally heavy, making it less ideal for real-time applications. 
-                MobileNet and ResNet50, on the other hand, offered a more practical balance of speed and accuracy, which allowed the bionic hand to make faster decisions when selecting a grasp.
-              </p2>
-              <h5>Project Limitations and Future Goals</h5>
-              <p>
-                Due to time constraints, I was unable to fully integrate the bionic hand's movement with the machine learning model's output. 
-                While I could program the hand to perform different gestures and grasps, I was unable to link these directly to the object detection predictions, which would have allowed the hand to react autonomously to each object identified. 
-                After submitting my dissertation, I unfortunately had to return the OYMotion hand, but I would have loved to continue working on this project to make it faster, more robust, and more responsive.
-              </p>
-              <p2>
-                This project reinforced my interest in the field of AI bionics and humanoid robotics,
-                 and I hope to have another opportunity in the future to develop an even more sophisticated version of this system, 
-                 ideally one that could achieve seamless integration between vision-based object recognition and robotic control.
-              </p2>
             </div>
           </div>
 
