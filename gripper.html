@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Machine Learning | Mahwish's Portfolio</title>
+  <title>Can My Hand See? | Mahwish's Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,10 +56,10 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Data Classification & Visualisation</h2>
+          <h2 class="hero-title mb-4">Can-My-Hand-See?</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
-              <a href="index.html">Home</a>   
+              <a href="index.html">Home</a>
             </li>
             <li class="breadcrumb-item active">Project Details</li>
           </ol>
@@ -81,9 +81,12 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="images/ml.gif" alt="">
+                  <img src="images/hand.gif" alt="">
                 </div>
 
+                <div class="swiper-slide">
+                  <img src="images/cmhsapp.gif" alt="">
+                </div>
 
               </div>
               <div class="swiper-pagination"></div>
@@ -94,16 +97,25 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Individual Work</li>
-                <li><strong>Project date</strong>: Dec. 2022</li>
-                <!-- <li><strong>Project URL</strong>: <a href="images/moons.pdf" target="_blank">View Project Document</a></li> -->
-
+                <li><strong>Category</strong>:Dissertation Project</li>
+                <li><strong>Project date</strong>: Jun. 2023</li>
+                 <!-- <li><strong>Project URL</strong>: <a href="https://github.com/MahwishAi/CPD-Portfolio/tree/c94f01809fea5a18d84cb00b825c2dc6bc8d2393/Object%20_Detection">View github</a></li> -->
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>About</h2>
+              <h2>Project Overview: Developing an Object-Recognizing Bionic Hand</h2>
               <p>
-                In my individual project conducted in MATLAB, I delved into machine learning classification techniques using the moons.csv dataset to compare the effectiveness of various methods, including K-Nearest Neighbors (KNN), Naive Bayes, and Decision Trees. My work involved employing these algorithms to understand their performance metrics and exploring ensemble methods to enhance prediction accuracy. Additionally, I engaged in data visualization to effectively represent the dataset's features and classification results, as illustrated by the scatter plot showing how different classes are distinguished by the algorithms. This comprehensive analysis not only demonstrated the unique strengths and limitations of each method but also underscored the value of ensemble approaches in achieving more robust classification outcomes.
+                For my dissertation, I developed an object detection application to integrate with the OYMotion bionic hand. Using an Arduino-based controller, 
+                I programmed the hand to perform various grasps and gestures by individually controlling each finger. The aim was to enable the hand to recognize everyday objects and suggest the most suitable grasp for each one,
+                 utilizing machine learning models trained on custom datasets. Due to time constraints, I couldn't fully integrate the bionic hand's movements with the model's outputs, but I programmed the hand to perform individual grasps as a proof of concept.
+              </p>
+            
+              <h3>Technical Challenges and Solutions</h3>
+              <p>
+                Selecting the right machine learning models posed unique challenges, as I needed ones that balanced accuracy and real-time performance. 
+                After a literature review, I chose VGG-19, MobileNet, and ResNet50—each offering strengths in object recognition and processing speed. However, 
+                the large dataset required extensive computational power and time to train, limiting my ability to experiment with model parameters. Despite these limitations, the project reinforced my passion for AI bionics and humanoid robotics. 
+                I hope to explore this area further in future projects, working towards faster, more robust robotic applications.
               </p>
             </div>
           </div>
